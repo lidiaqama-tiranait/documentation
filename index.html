@@ -25,8 +25,7 @@
             <div class="row">
                 <div class="col-8">
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-html" role="tabpanel"
-                            aria-labelledby="list-html-list">
+                        <div class="tab-pane fade show" id="list-html" role="tabpanel" aria-labelledby="list-html-list">
                             <p>Some placeholder content in a paragraph relating to "Home".
                                 And some more content, used here just to pad out and fill this tab panel.
                                 In production, you would obviously have more real content here. And not just text.
@@ -43,54 +42,602 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4"><div class="col-4">
+                <div class="col-4">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarHtml"
-                                aria-controls="navbarHtml" aria-expanded="false"
+                                data-bs-target="#navbarHtml" aria-controls="navbarHtml" aria-expanded="false"
                                 aria-label="Toggle HTML">HTML</a>
-                            <ul class="collapse" id="navbarHtml">
-                                <li><a class="dropdown-item list-group-item" id="list-html-list" data-bs-toggle="list" href="#list-html"
-                                    role="tab" aria-controls="list-html"href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <ol class="collapse" id="navbarHtml">
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarHtmlDocStr"
+                                        aria-controls="navbarHtmlDocStr" aria-expanded="false"
+                                        aria-label="Toggle HTML Document Structure">HTML Document Structure</a>
+                                    <ul class="collapse" id="navbarHtmlDocStr">
+                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                aria-controls="list-js">&lt!DOCTYPE html&gt</a>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navHtmlTag"
+                                                aria-controls="navHtmlTag" aria-expanded="false"
+                                                aria-label="Toggle html tag>">&lthtml&gt</a>
+                                            <ul class="collapse" id="navHtmlTag">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">Structure and Purpose</a></li>
+                                                <li><a class="dropdown-item nav-link dropdown-toggle" href="#"
+                                                        role="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#navcommatr" aria-controls="navcommatr"
+                                                        aria-expanded="false"
+                                                        aria-label="Toggle Common Attributes>">Common Attributes</a>
+                                                    <ul class="collapse" id="navcommatr">
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">lang</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">dir</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">xmlns</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">manifest (Depreceated in
+                                                                HTML5)</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navhead"
+                                                aria-controls="navhead" aria-expanded="false"
+                                                aria-label="Toggle Head Tag>">&lthead&gt</a>
+                                            <ul class="collapse" id="navhead">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">Description</a></li>
+                                                <li><a class="dropdown-item nav-link dropdown-toggle" href="#"
+                                                        role="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#navel" aria-controls="navel"
+                                                        aria-expanded="false"
+                                                        aria-label="Toggle Elements>">Elements</a>
+                                                    <ul class="collapse" id="navel">
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltmeta&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&lttitle&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltlink&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltstyle&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltscript&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltbase&gt</a></li>
+                                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                                data-bs-toggle="list" href="#list-js" role="tab"
+                                                                aria-controls="list-js">&ltnoscript&gt</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                            data-bs-toggle="list" href="#list-js" role="tab"
+                                            aria-controls="list-js">&ltbody&gt</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarHtmlEl"
+                                        aria-controls="navbarHtmlEl" aria-expanded="false"
+                                        aria-label="Toggle HTML Elements">HTML Elements</a>
+                                    <ul class="collapse" id="navbarHtmlEl">
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navtxt"
+                                                aria-controls="navtxt" aria-expanded="false"
+                                                aria-label="Toggle Text Content Elements">Text Content Elements</a>
+                                            <ul class="collapse" id="navtxt">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lth1&gt to &lth6&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltp&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lta&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltstrong&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltem&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltmark&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltsmall&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdel&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltins&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navgr" aria-controls="navgr"
+                                                aria-expanded="false" aria-label="Toggle Grouping Elements">Grouping
+                                                Elements</a>
+                                            <ul class="collapse" id="navgr">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdiv&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltspan&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltheader&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltnav&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltmain&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltsection&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltarticle&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltaside&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltfooter&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navlist"
+                                                aria-controls="navlist" aria-expanded="false"
+                                                aria-label="Toggle List">Lists</a>
+                                            <ul class="collapse" id="navlist">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltul&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltol&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltli&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdl&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdt&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdd&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navtable"
+                                                aria-controls="navtable" aria-expanded="false"
+                                                aria-label="Toggle Table">Tables</a>
+                                            <ul class="collapse" id="navtable">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttable&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttr&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltth&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttd&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltcaption&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltthead&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttbody&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttfoot&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navform"
+                                                aria-controls="navform" aria-expanded="false"
+                                                aria-label="Toggle Text Content Elements">Forms</a>
+                                            <ul class="collapse" id="navform">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltform&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltinput&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltlabel&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttextarea&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltbutton&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltselect&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltoption&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltfieldset&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltlegend&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navmedia"
+                                                aria-controls="navmedia" aria-expanded="false"
+                                                aria-label="Toggle Table">Media Elements</a>
+                                            <ul class="collapse" id="navmedia">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltimg&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltaudio&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltvideo&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltsource&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttrack&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navembedded"
+                                                aria-controls="navembedded" aria-expanded="false"
+                                                aria-label="Toggle Text Content Elements">Embedded Content</a>
+                                            <ul class="collapse" id="navembedded">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltiframe&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltembed&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltobject&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltparam&gt</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarHtmlAtt"
+                                        aria-controls="navbarHtmlAtt" aria-expanded="false"
+                                        aria-label="Toggle HTML Attributes">HTML Attributes</a>
+                                    <ul class="collapse" id="navbarHtmlAtt">
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navcommon"
+                                                aria-controls="navcommon" aria-expanded="false"
+                                                aria-label="Toggle Common Attributes">Common Attributes</a>
+                                            <ul class="collapse" id="navcommon">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">id</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">class</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">style</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">lang</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">data-*</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navevent"
+                                                aria-controls="navevent" aria-expanded="false"
+                                                aria-label="Toggle Event Attributes">Event Attributes</a>
+                                            <ul class="collapse" id="navevent">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onclick</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">ondblclick</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onmousedown</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onmouseup</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onmouseover</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onmouseout</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onchange</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">oninput</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onfocus</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onblur</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onkeydown</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onkeyup</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onkeypress</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onsubmit</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">onreset</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navglobal"
+                                                aria-controls="navglobal" aria-expanded="false"
+                                                aria-label="Toggle Global Attributes">Global Attributes</a>
+                                            <ul class="collapse" id="navglobal">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">role</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">aria-*</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">tabindex</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">hidden</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarHtmlIn"
+                                        aria-controls="navbarHtmlIn" aria-expanded="false"
+                                        aria-label="Toggle HTML Forms and Input Elements">HTML Forms and Input
+                                        Elements</a>
+                                    <ul class="collapse" id="navbarHtmlIn">
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navformAtt"
+                                                aria-controls="navformAtt" aria-expanded="false"
+                                                aria-label="Toggle Form Attributes">Form Attributes</a>
+                                            <ul class="collapse" id="navformAtt">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">action</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">method</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">enctype</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navInTypes"
+                                                aria-controls="navInTypes" aria-expanded="false"
+                                                aria-label="Toggle Input Types">Input Types</a>
+                                            <ul class="collapse" id="navInTypes">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">text</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">password</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">email</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">number</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">date</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">checkbox</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">radio</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">file</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">submit</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">button</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navvalidation"
+                                                aria-controls="navvalidation" aria-expanded="false"
+                                                aria-label="Toggle Form Validation Attributes">Form Validation
+                                                Attributes</a>
+                                            <ul class="collapse" id="navvalidation">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">required</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">pattern</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">min</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">max</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">maxlength</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">minlength</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarHtmlSem"
+                                        aria-controls="navbarHtmlSem" aria-expanded="false"
+                                        aria-label="Toggle HTML Semantic Elements">HTML Semantic Elements</a>
+                                    <ul class="collapse" id="navbarHtmlSem">
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navstr"
+                                                aria-controls="navstr" aria-expanded="false"
+                                                aria-label="Toggle Structural Elements">Structural Elements</a>
+                                            <ul class="collapse" id="navstr">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltheader&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltnav&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltmain&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltsection&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltarticle&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltaside&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltfooter&gt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="collapse" data-bs-target="#navinel"
+                                                aria-controls="navinel" aria-expanded="false"
+                                                aria-label="Toggle Inline Elements">Inline Elements</a>
+                                            <ul class="collapse" id="navinel">
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltb&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lti&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltu&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltabbr&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltbdi&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltbdo&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltcite&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltcode&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltdfn&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltkbd&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&ltsamp&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lts&gt</a></li>
+                                                <li><a class="dropdown-item list-group-item" id="list-js-list"
+                                                        data-bs-toggle="list" href="#list-js" role="tab"
+                                                        aria-controls="list-js">&lttime&gt</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCss"
-                            aria-controls="navbarCss" aria-expanded="false"
-                            aria-label="Toggle CSS">CSS</a>
+                                data-bs-target="#navbarCss" aria-controls="navbarCss" aria-expanded="false"
+                                aria-label="Toggle CSS">CSS</a>
                             <ul class="collapse" id="navbarCss">
-                                <li><a class="dropdown-item list-group-item" id="list-css-list" data-bs-toggle="list" href="#list-css" role="tab"
-                                    aria-controls="list-css" href="#">Action</a></li>
+                                <li><a class="dropdown-item list-group-item" id="list-css-list" data-bs-toggle="list"
+                                        href="#list-css" role="tab" aria-controls="list-css">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarJs"
-                            aria-controls="navbarJs" aria-expanded="false"
-                            aria-label="Toggle JS">JavaScript</a>
-                            <ul class="collapse" id="navbarJs">
-                                <li><a class="dropdown-item list-group-item " id="list-js-list" data-bs-toggle="list" href="#list-js" role="tab"
-                                    aria-controls="list-js" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                data-bs-target="#navbarJs" aria-controls="navbarJs" aria-expanded="false"
+                                aria-label="Toggle JS">JavaScript</a>
+                            <ul class="collapse" id="navbarJs" role="tablist">
+                                <li><a class="dropdown-item list-group-item" id="list-js-list" data-bs-toggle="list"
+                                        href="#list-js" role="tab" aria-controls="list-js">Action</a></li>
+                                <li><a class="dropdown-item list-group-item" id="list-html-list" data-bs-toggle="list"
+                                        href="#list-html" role="tab" aria-controls="list-html">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
-                </div>
-                    <!--<nav class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item " id="list-html-list" data-bs-toggle="list" href="#list-html"
-                            role="tab" aria-controls="list-html">HTML</a>
-                        <a class="list-group-item " id="list-css-list" data-bs-toggle="list" href="#list-css" role="tab"
-                            aria-controls="list-css">CSS</a>
-                        <a class="list-group-item " id="list-js-list" data-bs-toggle="list" href="#list-js" role="tab"
-                            aria-controls="list-js">JavaScript</a>
-                    </nav>-->
                 </div>
             </div>
         </div>
