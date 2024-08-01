@@ -25,8 +25,14 @@
             <div class="row">
                 <div class="col-8">
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show" id="list-html" role="tabpanel" aria-labelledby="list-html-list">
-                            <p>Some placeholder content in a paragraph relating to "Home".
+                        <div class="tab-pane fade show" id="list-doctype" role="tabpanel" aria-labelledby="list-doctype-list">
+                            <h1>&lt!DOCTYPE html&gt</h1>
+                            <p class="p-3">Në HTML, deklarata &lt!DOCTYPE html&gt përdoret për të specifikuar versionin e HTML që po përdoret në faqen e internetit. 
+                                Kjo deklaratë vendoset në fillim të dokumentit HTML.</p>
+                            <div class="p-3 text-danger-emphasis bg-danger-subtle border border-danger rounded-3">
+                                &lt!DOCTYPE html&gt është një deklaratë dhe jo një HTML tag.    
+                            </div>    
+                            <p class="p-3">Some placeholder content in a paragraph relating to "Home".
                                 And some more content, used here just to pad out and fill this tab panel.
                                 In production, you would obviously have more real content here. And not just text.
                                 It could be anything, really. Text, images, forms.</p>
@@ -54,10 +60,10 @@
                                         data-bs-toggle="collapse" data-bs-target="#navbarHtmlDocStr"
                                         aria-controls="navbarHtmlDocStr" aria-expanded="false"
                                         aria-label="Toggle HTML Document Structure">HTML Document Structure</a>
-                                    <ul class="collapse" id="navbarHtmlDocStr">
-                                        <li><a class="dropdown-item list-group-item" id="list-js-list"
-                                                data-bs-toggle="list" href="#list-js" role="tab"
-                                                aria-controls="list-js">&lt!DOCTYPE html&gt</a>
+                                    <ul class="collapse" id="navbarHtmlDocStr" role="tablist">
+                                        <li><a class="dropdown-item list-group-item" id="list-doctype-list"
+                                                data-bs-toggle="list" href="#list-doctype" role="tab"
+                                                aria-controls="list-doctype">&lt!DOCTYPE html&gt</a>
                                         </li>
                                         <li><a class="dropdown-item nav-link dropdown-toggle" href="#" role="button"
                                                 data-bs-toggle="collapse" data-bs-target="#navHtmlTag"
