@@ -19,3 +19,12 @@ ul{
     background-color: black;
     border: 0;
 }
+.textcol{
+color: #3d4287;
+}
+.nav-link.dropdown-toggle:hover, .dropdown-item.list-group-item:hover{
+    color: #cdb8d7
+}
+.rounded-3{
+  width: 85%; 
+}
