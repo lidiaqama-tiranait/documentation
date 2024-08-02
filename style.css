@@ -28,3 +28,6 @@ color: #3d4287;
 .rounded-3{
   width: 85%; 
 }
+.border-primary.rounded-3.margin{
+    margin-bottom: 15px;
+}

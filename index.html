@@ -89,26 +89,45 @@
                                                                         për
                                                                         zhvilluesit.
                                                                 </div>
-                                                                
                                                         </div>
+
                                                         <div class="mt-5 card">
                                                                 <div class="card-header">
-                                                                  <ul class="nav nav-tabs card-header-tabs">
-                                                                    <li class="nav-item">
-                                                                      <a class="nav-link active" aria-current="true" href="#">html</a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                      <a class="nav-link" href="#">css</a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                      <a class="nav-link" href="#" aria-disabled="true">javascript</a>
-                                                                    </li>
-                                                                    <li><a href="#" class="btn textcol"><i class="bi bi-clipboard-fill"></i></a></li>
-                                                                  </ul>
-                                                                  
+                                                                        <ul class="nav nav-tabs card-header-tabs"
+                                                                                role="tablist">
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link active"
+                                                                                                id="html-tab"
+                                                                                                href="#html-card"
+                                                                                                data-bs-toggle="tab"
+                                                                                                role="tab"
+                                                                                                aria-controls="html-card"
+                                                                                                aria-selected="true">html</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link" id="css-tab"
+                                                                                                href="#css-card"
+                                                                                                data-bs-toggle="tab"
+                                                                                                role="tab"
+                                                                                                aria-controls="css-card"
+                                                                                                aria-selected="false">css</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link" href="#"
+                                                                                                aria-disabled="true">javascript</a>
+                                                                                </li>
+                                                                                <li><a href="#"
+                                                                                                class="btn position-absolute top-0 end-0 text-primary-emphasis"><i
+                                                                                                        class="bi bi-clipboard-fill"></i></a>
+                                                                                </li>
+                                                                        </ul>
+
                                                                 </div>
-                                                                <div class="card-body">
-                                                                  <code class="card-text">
+                                                                <div class="tab-content">
+                                                                        <div class="card-body tab-pane fade show active"
+                                                                                id="html-card" role="tabpanel"
+                                                                                aria-labelledby="html-tab">
+                                                                                <code class="card-text">
                                                                         &lt;!DOCTYPE html&gt;<br>  
                                                                     &lt;html&gt;<br>
                                                                        &lt;head&gt;<br>
@@ -119,22 +138,114 @@
                                                                        &lt;/body&gt;<br>
                                                                     &lt;/html&gt;
                                                                   </code>
-                                                                  
+                                                                        </div>
+                                                                        <div class="card-body tab-pane fade show"
+                                                                                id="css-card" role="tabpanel"
+                                                                                aria-labelledby="css-tab">
+                                                                                <p class="card-text text-body-tertiary">
+                                                                                        /*Nothing*/
+                                                                                </p>
+                                                                        </div>
                                                                 </div>
-                                                              </div>
+                                                        </div>
+                                                        <p class="p-3">Si tregohet edhe në shembullin e mësipërm,
+                                                                &lt!DOCTYPE html&gt vendoset në fillim fare të file-t
+                                                                HTML, si një tregues se faqja jonë është në punuar me
+                                                                versionin më të fundit të HTML, që është HTML5.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center">
+                                                                <div
+                                                                        class="p-3 text-primary-emphasis bg-primary-subtle border border-primary rounded-3 margin">
+                                                                        <h6><i class="bi bi-info-circle-fill"></i> A E
+                                                                                DINIT SE?</h6>
+                                                                        HTML5 është dizajnuar për të qenë në përputhje
+                                                                        me versionet më të vjetra të HTML dhe për të
+                                                                        mbështetur veçori të reja, duke e bërë atë një
+                                                                        zgjedhje të mirë për zhvillimin modern të
+                                                                        web-it.
+                                                                </div>
+                                                        </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="list-css" role="tabpanel"
-                                                        aria-labelledby="list-css-list">
+                                                <!--<div class="tab-pane fade" id="list-navHtmlTag" role="tabpanel"
+                                                        aria-labelledby="navHtmlTag">
                                                         <p>Some placeholder content in a paragraph relating to "Home".
                                                                 And some more content, used here just to pad out and
                                                                 fill this tab panel.
                                                                 In production, you would obviously have more real
                                                                 content here. And not just text.
                                                                 It could be anything, really. Text, images, forms.</p>
-                                                </div>
+                                                </div>-->
                                                 <div class="tab-pane fade" id="list-js" role="tabpanel"
                                                         aria-labelledby="list-js-list">
-                                                        <p>huuuu</p>
+                                                        <h1>&lthtml&gt</h1>
+                                                        <h3> Structure and Purpose</h3>
+                                                        <p class="p-3">Elementi &lthtml&gt është <strong>root
+                                                                        element</strong> i një
+                                                                dokumenti HTML. Aty ndodhet e gjithë përmbajtja e faqes
+                                                                së internetit, duke përfshirë metadatat, titujt,
+                                                                paragrafët dhe elementët e tjerë. Le të shohim një
+                                                                shembull dhe të mësojmë pak më në detaje funksionin e
+                                                                secilit atribut që mund t'i bashkangjisim këtij tag-u
+                                                        </p>
+                                                        <div class="mt-5 card">
+                                                                <div class="card-header">
+                                                                        <ul class="nav nav-tabs card-header-tabs"
+                                                                                role="tablist">
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link active"
+                                                                                                id="html-tab"
+                                                                                                href="#html-card"
+                                                                                                data-bs-toggle="tab"
+                                                                                                role="tab"
+                                                                                                aria-controls="html-card"
+                                                                                                aria-selected="true">html</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link" id="css-tab"
+                                                                                                href="#css-card"
+                                                                                                data-bs-toggle="tab"
+                                                                                                role="tab"
+                                                                                                aria-controls="css-card"
+                                                                                                aria-selected="false">css</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link text-body-tertiary" href="#"
+                                                                                                aria-disabled="true">javascript</a>
+                                                                                </li>
+                                                                                <li><a href="#"
+                                                                                                class="btn position-absolute top-0 end-0 text-primary-emphasis"><i
+                                                                                                        class="bi bi-clipboard-fill"></i></a>
+                                                                                </li>
+                                                                        </ul>
+
+                                                                </div>
+                                                                <div class="tab-content">
+                                                                        <div class="card-body tab-pane fade show active"
+                                                                                id="html-card" role="tabpanel"
+                                                                                aria-labelledby="html-tab">
+                                                                                <pre><code class="card-text">
+&lt;!DOCTYPE html&gt;
+   &lt;html lang="en"&gt;
+      &lt;head&gt;
+         &lt;meta charset="UTF-8"&gt;
+         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+         &lt;title&gt;Document Title&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+         &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+         &lt;p&gt;This is a paragraph.&lt;/p&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;</code></pre>
+                                                                        </div>
+                                                                        <div class="card-body tab-pane fade show"
+                                                                                id="css-card" role="tabpanel"
+                                                                                aria-labelledby="css-tab">
+                                                                                <p class="card-text text-body-tertiary">
+                                                                                        /*Nothing*/
+                                                                                </p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
@@ -166,12 +277,13 @@
                                                                                                 html&gt</a>
                                                                                 </li>
                                                                                 <li><a class="dropdown-item nav-link dropdown-toggle"
-                                                                                                href="#" role="button"
+                                                                                                href="#list-navHtmlTag"
+                                                                                                role="button"
                                                                                                 data-bs-toggle="collapse"
                                                                                                 data-bs-target="#navHtmlTag"
                                                                                                 aria-controls="navHtmlTag"
                                                                                                 aria-expanded="false"
-                                                                                                aria-label="Toggle html tag>">&lthtml&gt</a>
+                                                                                                aria-label="Toggle html tag">&lthtml&gt</a>
                                                                                         <ul class="collapse"
                                                                                                 id="navHtmlTag">
                                                                                                 <li><a class="dropdown-item list-group-item"
