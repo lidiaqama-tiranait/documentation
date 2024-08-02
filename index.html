@@ -185,31 +185,33 @@
                                                                 së internetit, duke përfshirë metadatat, titujt,
                                                                 paragrafët dhe elementët e tjerë. Le të shohim një
                                                                 shembull dhe të mësojmë pak më në detaje funksionin e
-                                                                secilit atribut që mund t'i bashkangjisim këtij tag-u
+                                                                secilit atribut që mund t'i bashkangjisim këtij tag-u.
                                                         </p>
-                                                        <div class="mt-5 card">
+                                                        <div class="mt-3 card">
                                                                 <div class="card-header">
                                                                         <ul class="nav nav-tabs card-header-tabs"
                                                                                 role="tablist">
                                                                                 <li class="nav-item">
                                                                                         <a class="nav-link active"
-                                                                                                id="html-tab"
-                                                                                                href="#html-card"
+                                                                                                id="html-tab2"
+                                                                                                href="#html-card2"
                                                                                                 data-bs-toggle="tab"
                                                                                                 role="tab"
-                                                                                                aria-controls="html-card"
+                                                                                                aria-controls="html-card2"
                                                                                                 aria-selected="true">html</a>
                                                                                 </li>
                                                                                 <li class="nav-item">
-                                                                                        <a class="nav-link" id="css-tab"
-                                                                                                href="#css-card"
+                                                                                        <a class="nav-link"
+                                                                                                id="css-tab2"
+                                                                                                href="#css-card2"
                                                                                                 data-bs-toggle="tab"
                                                                                                 role="tab"
-                                                                                                aria-controls="css-card"
+                                                                                                aria-controls="css-card2"
                                                                                                 aria-selected="false">css</a>
                                                                                 </li>
                                                                                 <li class="nav-item">
-                                                                                        <a class="nav-link text-body-tertiary" href="#"
+                                                                                        <a class="nav-link text-body-tertiary"
+                                                                                                href="#"
                                                                                                 aria-disabled="true">javascript</a>
                                                                                 </li>
                                                                                 <li><a href="#"
@@ -221,8 +223,8 @@
                                                                 </div>
                                                                 <div class="tab-content">
                                                                         <div class="card-body tab-pane fade show active"
-                                                                                id="html-card" role="tabpanel"
-                                                                                aria-labelledby="html-tab">
+                                                                                id="html-card2" role="tabpanel"
+                                                                                aria-labelledby="html-tab2">
                                                                                 <pre><code class="card-text">
 &lt;!DOCTYPE html&gt;
    &lt;html lang="en"&gt;
@@ -238,13 +240,91 @@
    &lt;/html&gt;</code></pre>
                                                                         </div>
                                                                         <div class="card-body tab-pane fade show"
-                                                                                id="css-card" role="tabpanel"
-                                                                                aria-labelledby="css-tab">
+                                                                                id="css-card2" role="tabpanel"
+                                                                                aria-labelledby="css-tab2">
                                                                                 <p class="card-text text-body-tertiary">
                                                                                         /*Nothing*/
                                                                                 </p>
                                                                         </div>
                                                                 </div>
+                                                        </div>
+                                                        <h3 class="mt-5">Common Atribbutes</h3>
+                                                        <div class="p-3">
+                                                                <ul style="list-style: disc;">
+                                                                        <li><strong>lang</strong>
+                                                                                <p class="mt-3">Specifikon gjuhën e
+                                                                                        dokumentit. Kjo ndihmon motorët
+                                                                                        e kërkimit dhe shfletuesit të
+                                                                                        kuptojnë gjuhën kryesore të
+                                                                                        përmbajtjes, që është e dobishme
+                                                                                        për mjete të aksesueshmërisë,
+                                                                                        shërbimet e përkthimit dhe SEO.
+                                                                                </p>
+                                                                                <p>Përmirëson aksesueshmërinë dhe
+                                                                                        internacionalizimin. Për
+                                                                                        shembull, përdorimi i
+                                                                                        <strong>lang="es"</strong>
+                                                                                        tregon se dokumenti është në
+                                                                                        spanjisht, që ndihmon lexuesit e
+                                                                                        ekranit dhe teknologjitë
+                                                                                        ndihmëse të kuptojnë gjuhën e
+                                                                                        përmbajtjes.
+                                                                                </p>
+                                                                        </li>
+                                                                        <li><strong>dir</strong>
+                                                                                <p class="mt3">Përcakton drejtimin e
+                                                                                        tekstit për dokumentin. Mund të
+                                                                                        jetë:
+                                                                                <ul style="list-style: lower-latin;">
+                                                                                        <li>
+                                                                                                <pre><strong>ltr</strong> <i class="bi bi-arrow-right"></i> nga e majta në të djathtë</pre>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                                <pre><strong>rtl</strong> <i class="bi bi-arrow-right"></i> nga e djathta në të majtë</pre>
+                                                                                        </li>
+                                                                                </ul>
+                                                                                Kjo është
+                                                                                veçanërisht e dobishme për gjuhë
+                                                                                si arabisht ose hebraisht që
+                                                                                lexohen nga djathta në majtas.
+                                                                                </p>
+                                                                                <p>Ky atribut ndihmon shfletuesit dhe
+                                                                                        teknologjitë ndihmëse të shfaqin
+                                                                                        tekstin siç duhet. Për shembull,
+                                                                                        vendosja e
+                                                                                        <strong>dir="rtl"</strong> është
+                                                                                        thelbësore për renditjen e duhur
+                                                                                        të gjuhëve që lexohen nga
+                                                                                        djathta në majtas.
+                                                                                </p>
+                                                                        </li>
+                                                                        <li><strong>xmlns</strong>
+                                                                                <p>Deklaron hapësirën e emrave XML për
+                                                                                        dokumentin. Kjo është më e
+                                                                                        rëndësishme për XHTML (një
+                                                                                        version i bazuar në XML të
+                                                                                        HTML). Në HTML5, përdorimi i
+                                                                                        xmlns zakonisht nuk është i
+                                                                                        nevojshëm, pasi HTML5 nuk është
+                                                                                        e bazuar në XML Për shembull,
+                                                                                        <strong>&lt;html
+                                                                                                xmlns="http://www.w3.org/1999/xhtml"&gt;</strong>për
+                                                                                        dokumentet XHTML.</p>
+                                                                        </li>
+                                                                        <li><strong>manifest (Deprecated në
+                                                                                        HTML5)</strong>
+                                                                                <p>Është përdorur në HTML5 për të
+                                                                                        përcaktuar një file manifest
+                                                                                        për aplikacionet offline, duke
+                                                                                        specifikuar cilat skedarë duhet
+                                                                                        të ruhen dhe të jenë të
+                                                                                        disponueshëm offline. Ky veçori
+                                                                                        është pjesë e Cache të
+                                                                                        Aplikacionit, e cila është
+                                                                                        dekurajuar në favor të Service Workers.Për shembull,
+                                                                                        <strong>&lt;html manifest="example.appcache"&gt;</strong>(nuk rekomandohet më për përdorim; Pjesët e Shërbimit janë qasja moderne).</p>
+                                                                        </li>
+                                                                </ul>
                                                         </div>
                                                 </div>
                                         </div>
