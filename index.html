@@ -175,8 +175,8 @@
                                                                 content here. And not just text.
                                                                 It could be anything, really. Text, images, forms.</p>
                                                 </div>-->
-                                                <div class="tab-pane fade" id="list-js" role="tabpanel"
-                                                        aria-labelledby="list-js-list">
+                                                <div class="tab-pane fade" id="list-structure" role="tabpanel"
+                                                        aria-labelledby="list-structure-list">
                                                         <h1>&lthtml&gt</h1>
                                                         <h3> Structure and Purpose</h3>
                                                         <p class="p-3">Elementi &lthtml&gt është <strong>root
@@ -309,7 +309,8 @@
                                                                                         e bazuar në XML Për shembull,
                                                                                         <strong>&lt;html
                                                                                                 xmlns="http://www.w3.org/1999/xhtml"&gt;</strong>për
-                                                                                        dokumentet XHTML.</p>
+                                                                                        dokumentet XHTML.
+                                                                                </p>
                                                                         </li>
                                                                         <li><strong>manifest (Deprecated në
                                                                                         HTML5)</strong>
@@ -321,8 +322,159 @@
                                                                                         disponueshëm offline. Ky veçori
                                                                                         është pjesë e Cache të
                                                                                         Aplikacionit, e cila është
-                                                                                        dekurajuar në favor të Service Workers.Për shembull,
-                                                                                        <strong>&lt;html manifest="example.appcache"&gt;</strong>(nuk rekomandohet më për përdorim; Pjesët e Shërbimit janë qasja moderne).</p>
+                                                                                        dekurajuar në favor të Service
+                                                                                        Workers.Për shembull,
+                                                                                        <strong>&lt;html
+                                                                                                manifest="example.appcache"&gt;</strong>(nuk
+                                                                                        rekomandohet më për përdorim;
+                                                                                        Pjesët e Shërbimit janë qasja
+                                                                                        moderne).
+                                                                                </p>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="tab-pane faqe" id="list-dec" role="tabpanel"
+                                                        aria-labelledby="list-dec-list">
+                                                        <h1>&lt;head&gt;</h1>
+                                                        <h3>Desription</h3>
+                                                        <p class="p-3">Elementi &lt;head&gt; në HTML është një kontejner
+                                                                për
+                                                                metadatat dhe
+                                                                lidhjet me burime të jashtme që përdoren nga
+                                                                faqja e internetit, por që nuk shfaqen
+                                                                drejtpërdrejt në shfletues. Ai ofron informacion
+                                                                të rëndësishëm për dokumentin, si p.sh. titulli
+                                                                i tij, charset, stilet, skriptet dhe
+                                                                informacionet e tjera meta.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center">
+                                                                <div
+                                                                        class="p-3 text-danger-emphasis bg-danger-subtle border border-danger rounded-3">
+                                                                        <h6><i class="bi bi-exclamation-octagon-fill"></i>
+                                                                                KUJDES</h6>
+                                                                        Elementi &lt;head&gt; kryesisht përmban
+                                                                        informacion për
+                                                                        përpunim nga makinat, jo për lexim nga
+                                                                        njerëzit. Për informacion të dukshëm për
+                                                                        njerëzit, si p.sh. titujt kryesorë dhe
+                                                                        autorët e listuar, shikoni elementin
+                                                                        &lt;header&gt;.
+                                                                </div>
+                                                        </div>
+                                                        <h3 class="mt-5">Elements</h3>
+                                                        <div class="p-3">
+                                                                <ul style="list-style: disc;">
+                                                                        <li><strong>&lt;meta&gt;</strong>
+                                                                                <p class="mt-3">Elementi &lt;meta&gt;
+                                                                                        ofron metadata për dokumentin
+                                                                                        HTML. Metadata nuk do të shfaqet
+                                                                                        në faqe, por do të jetë e
+                                                                                        lexueshme nga makinat. Elementi
+                                                                                        &lt;meta&gt; mund të përdoret
+                                                                                        për të specifikuar lloje të
+                                                                                        ndryshme informacioni, si për
+                                                                                        shembull:</p>
+                                                                                <ul style="list-style: lower-latin;">
+                                                                                        <li>
+                                                                                                <p><em>charset</em> <i
+                                                                                                                class="bi bi-arrow-right"></i>
+                                                                                                        Përcakton
+                                                                                                        kodimin e
+                                                                                                        karaktereve për
+                                                                                                        dokumentin.</p>
+                                                                                                <p>Ky atribut deklaron
+                                                                                                        kodimin e
+                                                                                                        karaktereve të
+                                                                                                        dokumentit. Nëse
+                                                                                                        atributi është i
+                                                                                                        pranishëm, vlera
+                                                                                                        e tij duhet të
+                                                                                                        përputhet me
+                                                                                                        ASCII pa
+                                                                                                        ndjeshmëri ndaj
+                                                                                                        shkronjave të
+                                                                                                        mëdha për vargun
+                                                                                                        "utf-8", sepse
+                                                                                                        UTF-8 është
+                                                                                                        kodimi i vetëm i
+                                                                                                        vlefshëm për
+                                                                                                        dokumentet
+                                                                                                        HTML5. Elementet
+                                                                                                        &lt;meta&gt; që
+                                                                                                        deklarojnë një
+                                                                                                        kodim të
+                                                                                                        karaktereve
+                                                                                                        duhet të
+                                                                                                        vendosen
+                                                                                                        tërësisht brenda
+                                                                                                        1024 byte-ve të
+                                                                                                        para të
+                                                                                                        dokumentit.
+                                                                                                </p>
+                                                                                                <div class="card">
+                                                                                                        <div
+                                                                                                                class="card-header">
+                                                                                                                <ul class="nav nav-tabs card-header-tabs"
+                                                                                                                        role="tablist">
+                                                                                                                        <li
+                                                                                                                                class="nav-item">
+                                                                                                                                <a class="nav-link active"
+                                                                                                                                        id="html-tab"
+                                                                                                                                        href="#html-card"
+                                                                                                                                        data-bs-toggle="tab"
+                                                                                                                                        role="tab"
+                                                                                                                                        aria-controls="html-card"
+                                                                                                                                        aria-selected="true">html</a>
+                                                                                                                        </li>
+                                                                                                                </ul>
+                                                                                                        </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                                <p><em>viewport</em> <i
+                                                                                                                class="bi bi-arrow-right"></i>
+                                                                                                        Kontrollon
+                                                                                                        paraqitjen në
+                                                                                                        shfletuesit
+                                                                                                        mobil.</p>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                                <p><em>përshkrimin</em>
+                                                                                                        <i
+                                                                                                                class="bi bi-arrow-right"></i>
+                                                                                                        Ofron një
+                                                                                                        përshkrim të
+                                                                                                        shkurtër të
+                                                                                                        përmbajtjes së
+                                                                                                        dokumentit, i
+                                                                                                        cili mund të
+                                                                                                        përdoret nga
+                                                                                                        motorët e
+                                                                                                        kërkimit.
+                                                                                                </p>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                                <p><em>keywords</em> <i
+                                                                                                                class="bi bi-arrow-right"></i>
+                                                                                                        Përcakton fjalët
+                                                                                                        kyçe relevante
+                                                                                                        për përmbajtjen
+                                                                                                        e dokumentit, të
+                                                                                                        cilat mund të
+                                                                                                        ndihmojnë në
+                                                                                                        optimizimin e
+                                                                                                        motorëve të
+                                                                                                        kërkimit (SEO).
+                                                                                                </p>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                                <p><em>autorin</em> <i
+                                                                                                                class="bi bi-arrow-right"></i>
+                                                                                                        Përcakton
+                                                                                                        autorin e
+                                                                                                        dokumentit.</p>
+                                                                                        </li>
+                                                                                </ul>
                                                                         </li>
                                                                 </ul>
                                                         </div>
@@ -367,11 +519,11 @@
                                                                                         <ul class="collapse"
                                                                                                 id="navHtmlTag">
                                                                                                 <li><a class="dropdown-item list-group-item"
-                                                                                                                id="list-js-list"
+                                                                                                                id="list-structure-list"
                                                                                                                 data-bs-toggle="list"
-                                                                                                                href="#list-js"
+                                                                                                                href="#list-structure"
                                                                                                                 role="tab"
-                                                                                                                aria-controls="list-js">Structure
+                                                                                                                aria-controls="list-structure">Structure
                                                                                                                 and
                                                                                                                 Purpose</a>
                                                                                                 </li>
@@ -431,11 +583,11 @@
                                                                                         <ul class="collapse"
                                                                                                 id="navhead">
                                                                                                 <li><a class="dropdown-item list-group-item"
-                                                                                                                id="list-js-list"
+                                                                                                                id="list-dec-list"
                                                                                                                 data-bs-toggle="list"
-                                                                                                                href="#list-js"
+                                                                                                                href="#list-dec"
                                                                                                                 role="tab"
-                                                                                                                aria-controls="list-js">Description</a>
+                                                                                                                aria-controls="list-dec">Description</a>
                                                                                                 </li>
                                                                                                 <li><a class="dropdown-item nav-link dropdown-toggle"
                                                                                                                 href="#"
